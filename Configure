@@ -1306,7 +1306,7 @@ else               { $no_user_defines=1;    }
 unless ($disabled{afalgeng}) {
     $config{afalgeng}="";
     if ($target =~ m/^linux/) {
-        my $minver = 4*10000 + 1*100 + 0;
+        my $minver = 2*10000 + 1*100 + 0;
         if ($config{cross_compile_prefix} eq "") {
             my $verstr = `uname -r`;
             my ($ma, $mi1, $mi2) = split("\\.", $verstr);
